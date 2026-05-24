@@ -13,7 +13,7 @@ def main():
 
     # Pick a random target image from your validation set
     # Make sure this specific file exists in your dataset/val folder!
-    target_image = "dataset/val/AF25.jpg"
+    target_image = "C:/Users/andre/Downloads/photo_2026-05-24_21-31-10git log --oneline.jpg"
 
     print(f"Target Image: {target_image}")
     print("-" * 40)
