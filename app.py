@@ -34,7 +34,7 @@ with gr.Blocks() as demo:
             image_input = gr.Image(type="filepath", label="Image Input (Drag & Drop)")
 
             gr.Examples(
-                examples=["examples/low.jpg", "examples/medium.jpg", "examples/t.jpg"],
+                examples=["examples/low.jpg", "examples/medium.jpg", "examples/top.jpg"],
                 inputs=image_input,
                 label="Click on any example below to test:"
             )
