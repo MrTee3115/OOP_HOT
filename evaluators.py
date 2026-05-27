@@ -67,7 +67,7 @@ class ColorTemperatureEvaluator(Evaluator):
 
         # Shrink image to process colors instantly
         image = Image.open(img_path).convert("RGB").resize((32, 32))
-        pixels = list(image.getdata())
+        pixels = list(image.get_flattened_data())
 
         # Count pixels with more red than blue (warm colors)
         warm_pixels = sum(1 for r, g, b in pixels if r > b + 20)
